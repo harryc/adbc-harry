@@ -1,0 +1,23 @@
+{
+  "name": "bootstrap_sass_starter_theme",
+  "version": "1.0.0",
+  "description": "A starter theme for Drupal, based on the SASS release of Bootstrap.",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.6.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-bower": "0.0.13",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-watch": "^4.3.5"
+  },
+  "scripts": {
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+  },
+  "author": "Michael Wright <mew.fla@gmail.com>",
+  "license": "MIT"
+}

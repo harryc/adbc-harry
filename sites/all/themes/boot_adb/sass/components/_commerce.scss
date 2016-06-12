@@ -1,0 +1,37 @@
+// Drupal Commerce customizations
+
+// Tabs
+ul.inline.commerce-checkout-progress {
+	margin-bottom: 5px;
+	margin-left: 5px;
+	background-color: #efefef;
+	padding-left: 0px;
+	li {
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 10px;
+		margin: 0 0 10px 0;
+		padding: 15px 15px 15px 25px;
+		position: relative;
+		width: auto;
+		float: left;
+		list-style: none;
+		background-color: #efefef;
+		border-right: 1px solid #ccc;
+	}
+	li.active {
+		background-color: #e64d00;
+		color: #fff;
+	}
+	li.complete {
+		border-right: none;
+	}
+}
+.panel-default > .panel-heading {
+	background-color: #993300;
+	color: #fff;
+	font-size: 14px;
+}
+fieldset legend.panel-title {
+	font-size: .85em;
+}

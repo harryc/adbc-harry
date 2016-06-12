@@ -1,0 +1,23 @@
+<?php
+/**
+* @file
+* A description of what your module does.
+*/
+
+/**
+ * Implements hook_entity_info_alter().
+ */
+function mew_custom_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['product_list'] = array(
+    'label' => t('Product list'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['commerce_product']['view modes']['node_product_list'] = array(
+    'label' => t('Node: Product list'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['commerce_product']['view modes']['product_in_cart'] = array(
+    'label' => t('Product in cart'),
+    'custom settings' => TRUE,
+  );
+}

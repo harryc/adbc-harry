@@ -1,0 +1,4 @@
+name = MEW Custom Module
+description = A site-wide utility module.
+core = 7.x
+project = Custom

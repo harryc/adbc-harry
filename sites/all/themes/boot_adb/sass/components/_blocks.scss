@@ -1,0 +1,68 @@
+// Theme Customizations to Blocks //
+
+// Facetapi //
+/* Search api facet blocks */
+.region-sidebar-first .block-facetapi {
+  border-top: 1px solid #000	;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 10px; /* LTR */
+  padding-top: 15px;
+  //padding-left: 10px; /* LTR */
+
+  h2.block-title {
+    font-family: $font-family-sans-serif;
+    color: #993300;
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    // padding-bottom: 10px;
+    @media only screen and (min-width: 768px) {
+    	font-size: 19px;
+    }
+    @media only screen and (min-width: 992px) {
+    	font-size: 24px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    list-style-image: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    li  {
+      background: none;
+      line-height: 22px;
+      list-style: none;
+      list-style-image: none;
+      margin: 0;
+      padding-left: 0;
+      input {
+      	margin-right: 5px;
+      }
+      a {
+        color: #333;
+        font-size: 14px;
+        font-family: $font-family-sans-serif;
+        font-weight: 500;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+        &.facetapi-active {
+          display: block;
+          float: left; /* LTR */
+          padding: 0 1px 0 0; /* LTR */
+          text-decoration: none;
+          text-indent: -9999px;
+          width: 20px;
+        }
+        &.facetapi-inactive {
+          padding-left: 0; /* LTR */
+        }
+      }
+    }
+  }
+}

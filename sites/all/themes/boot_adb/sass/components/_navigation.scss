@@ -1,0 +1,106 @@
+// Theme Customizations to Navigations //
+
+// User Menu block - Page-Top region //
+#page-top .container {
+  background: #993300;
+  height: 34px;
+  width: 100%;
+}
+.user-info .content {
+  height: 100%;
+  float: right;
+}
+
+
+#block-menu-menu-custom-user-menu {
+  ul.menu {
+    list-style: none;
+    margin-top: 2px;
+    position: relative;
+    text-align: center;
+    li {
+      float: left;
+      font-size: .9em;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 5px;
+      a {
+        display: block;
+        color: #fff;
+        font-weight: 400;
+        &:hover {
+          background-color:  lighten( #993300, 10% );
+        }
+      }
+    }
+    li.first {
+      border-right: 1px solid #fff;
+      padding-right: 7px;
+    }
+    li.last {
+      padding-left: 7px;
+    }
+  }
+}
+
+#block-views-shopping-cart-block-sc {
+  height: 100%;
+  white-space: nowrap;
+  .view-shopping-cart {
+    background-color: #fff;
+    background-image: url("../images/picto_cart.png");
+    background-position: 1% 48%;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: -30px;
+    padding-left: 60px;
+    font-size: .9em;
+    line-height: 34px;
+    .view-empty {
+      margin: 0;
+      vertical-align: middle;
+      p {
+        float: left;
+        line-height: 30px;
+      }
+    }
+    .line-item-summary {
+      display: inline;
+      float: left;
+      height: 34px;
+      line-height: 34px;
+      margin: 0;
+      text-align: right;
+      .line-item-total {
+        color: #888;
+        float: left;
+        font-weight: 300;
+        height: 100%;
+        padding: 0 12px 0 6px;
+        .line-item-total-label {
+          display: none;
+          font-weight: bold;
+        }
+      }
+      ul.links {
+        background-color:  lighten( #993300, 15% );
+        clear: none;
+        color: #fff;
+        display: block;
+        float: left;
+        line-height: 34px;
+        margin: 0 0 0 5px;
+        padding: 0 10px;
+        li {
+          display: inline;
+          list-style-type: none;
+          a {
+            color:  #fff;
+            font-weight: 700;
+          }
+        }
+      } 
+    }
+  }
+  @include clearfix;
+}
